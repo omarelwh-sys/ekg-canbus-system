@@ -24,9 +24,9 @@ Dieses System besteht aus:
 ![Senderplatine](Hardware/Senderplatine.jpg)
 
 ### Empfänger
-![Empfänger Schaltplan](Hardware/Empfänger-Schaltplan.png)
-![Empfänger PCB Layout](Hardware/Empfänger-PCB-Layout.png)
-![Empfängerplatine](Hardware/Empfängerplatine.jpg)
+![Empfaenger Schaltplan](Hardware/Empfaenger-Schaltplan.png)
+![Empfaenger PCB Layout](Hardware/Empfaenger-PCB-Layout.png)
+![Empfaengerplatine](Hardware/Empfaengerplatine.jpg)
 
 ### Gesamtsystem
 ![Gesamtsystem](Hardware/Gesamtsystem%20mit%20Verbindung%20durch%20Sub-D-Kabel.jpg)

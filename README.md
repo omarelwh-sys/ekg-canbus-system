@@ -59,7 +59,7 @@ Dieses System besteht aus:
 
 ## Firmware
 
-Der Quellcode für Sender und Empfänger befindet sich im Ordner [`Firmware/`](Firmware/).
+Der Quellcode für den **Sender** befindet sich im Ordner [`Firmware/sender/main.cpp`](Firmware/sender/main.cpp)  und für den **Empfänger** im Ordner [`Firmware/receiver/main.cpp`](Firmware/receiver/main.cpp).
 
 Eine detaillierte Beschreibung, benötigte Bibliotheken und eine Schritt-für-Schritt-Anleitung zum Kompilieren findest du in  
 [`Firmware/README.md`](Firmware/README.md).

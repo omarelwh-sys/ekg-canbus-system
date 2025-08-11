@@ -19,11 +19,13 @@ Dieses System besteht aus:
 ## Software-Überblick
 
 ### Sender
+[`Firmware/sender/main.cpp`](Firmware/sender/main.cpp)  
 - Liest EKG-Daten vom AD8232-Sensor über A0.
 - Sendet die Daten per MCP2515 (CAN, 1 Mbit/s) an den Empfänger.
 - Erwartet eine Rückmeldung (ACK/NACK).
 
 ### Empfänger
+[`Firmware/receiver/main.cpp`](Firmware/receiver/main.cpp)  
 - Empfängt CAN-Daten.
 - Prüft Sequenznummer, Zeitstempel und Prüfsumme (XOR).
 - Zeigt die EKG-Kurve live auf SSD1306 OLED an.

@@ -16,6 +16,28 @@ Dieses System besteht aus:
 
 ---
 
+## Software-Überblick
+
+### Sender
+- Liest EKG-Daten vom AD8232-Sensor über A0.
+- Sendet die Daten per MCP2515 (CAN, 1 Mbit/s) an den Empfänger.
+- Erwartet eine Rückmeldung (ACK/NACK).
+
+### Empfänger
+- Empfängt CAN-Daten.
+- Prüft Sequenznummer, Zeitstempel und Prüfsumme (XOR).
+- Zeigt die EKG-Kurve live auf SSD1306 OLED an.
+- Sendet ACK/NACK zurück.
+
+### Benötigte Bibliotheken
+- [`MCP2515`](https://github.com/autowp/arduino-mcp2515) – CAN via SPI
+- [`Adafruit SSD1306`](https://github.com/adafruit/Adafruit_SSD1306) – OLED Display
+- [`Adafruit GFX`](https://github.com/adafruit/Adafruit-GFX-Library) – Grafikbibliothek für OLED
+- `Wire` (I²C, Arduino Standardbibliothek)
+- `SPI` (Arduino Standardbibliothek)
+
+---
+
 ## Hardware
 
 ### Sender

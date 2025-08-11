@@ -34,8 +34,11 @@ Dieses System besteht aus:
 ---
 
 ## Firmware
-Der Quellcode für Sender und Empfänger befindet sich im Ordner `Firmware/`.  
-Enthalten sind alle Arduino-Sketches in C++.
+
+Der Quellcode für Sender und Empfänger befindet sich im Ordner [`Firmware/`](Firmware/).
+
+Eine detaillierte Beschreibung, benötigte Bibliotheken und eine Schritt-für-Schritt-Anleitung zum Kompilieren findest du in  
+[`Firmware/README.md`](Firmware/README.md).
 
 ---
 

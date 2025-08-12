@@ -1,12 +1,13 @@
 # EKG-CAN-Bus-System
 
-Bachelorprojekt: EKG-Monitoring mit ATmega328P, MCP2515 (CAN) und OLED.  
-Enthält Firmware (Sender/Empfänger) und Hardware-Screenshots.
+Bachelorprojekt: EKG-Monitoring mit ATmega328P, MCP2515 (CAN) und OLED.
+Implementiert funktionale Sicherheit durch Sicherheitsmechanismen wie Sequenznummern, Zeitstempel, Checksummen (XOR), Timeout und ACK/NACK.
+Der Sender überträgt EKG-Daten mit eingebetteten Sicherheitsmerkmalen, der Empfänger validiert diese aktiv und überwacht die Datenintegrität in Echtzeit.
 
 ## Projektbeschreibung
 Dieses System besteht aus:
-- **Sender**: Liest EKG-Daten vom AD8232-Sensor und sendet diese über den CAN-Bus.
-- **Empfänger**: Empfängt die Daten, prüft sie auf Integrität (Sequenznummer, Zeitstempel, Checksumme) und zeigt sie in Echtzeit auf einem OLED-Display an.
+- **Sender**: Liest EKG-Daten vom AD8232-Sensor und sendet sie über den CAN-Bus mit integrierten Sicherheitsmerkmalen.
+- **Empfänger**: Empfängt die Daten, prüft Sequenznummer, Zeitstempel und Checksumme und zeigt das Signal in Echtzeit auf einem OLED-Display an.
 
 ### Merkmale
 - Eigenes Schaltungsdesign & PCB-Layout (KiCad)

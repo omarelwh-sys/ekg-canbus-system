@@ -7,7 +7,7 @@ Der Sender überträgt EKG-Daten mit eingebetteten Sicherheitsmerkmalen, der Emp
 ## Projektbeschreibung
 Dieses System besteht aus:
 - **Sender**: Liest EKG-Daten vom AD8232-Sensor und sendet sie über den CAN-Bus mit integrierten Sicherheitsmerkmalen.
-- **Empfänger**: Empfängt die Daten, prüft Sequenznummer, Zeitstempel und Checksumme und zeigt das Signal in Echtzeit auf einem OLED-Display an. Bei Fehlern: Display-Fehlermeldung + NACK; LED blinkt.
+- **Empfänger**: Empfängt die Daten, prüft Sequenznummer, Zeitstempel, Sender-ID und Checksumme und zeigt die EKG-Kurve in Echtzeit auf einem OLED-Display an. Bei Fehlern: Display-Fehlermeldung + NACK; LED blinkt.
 
 ### Merkmale
 - Eigenes Schaltungsdesign & PCB-Layout (KiCad)
